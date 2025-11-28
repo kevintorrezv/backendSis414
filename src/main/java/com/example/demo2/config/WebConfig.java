@@ -22,7 +22,8 @@ public class WebConfig {
                         )
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS") // Permite todos los métodos HTTP comunes
                         .allowedHeaders("*") // Permite cualquier cabecera en la petición
-                        .allowCredentials(true);
+                        .exposedHeaders("Authorization", "Content-Type")
+                        .allowCredentials(false);
             }
         };
     }
