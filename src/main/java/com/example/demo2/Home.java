@@ -9,7 +9,7 @@ public class Home {
     @GetMapping("/")
     String hello()
     {
-        return "Bienvenido a SIS 414 G2 v2";
+        return "Parcial 2 Kevin Angel Torrez Vedia";
     }
 
     /*
