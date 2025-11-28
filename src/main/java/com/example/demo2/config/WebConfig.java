@@ -18,11 +18,11 @@ public class WebConfig {
                 registry.addMapping("/**")
                         .allowedOrigins(
                                 "http://localhost:4200",
-                                "https://semihumanized-stoopingly-emerald.ngrok-free.dev"
+                                "https://*.ngrok-free.app"
                         )
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS") // Permite todos los métodos HTTP comunes
-                        .allowedHeaders("*"); // Permite cualquier cabecera en la petición
-                
+                        .allowedHeaders("*") // Permite cualquier cabecera en la petición
+                        .allowCredentials(true);
             }
         };
     }
